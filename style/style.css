@@ -1,0 +1,12 @@
+:root {
+    /*Variáveis de Cores*/
+    --cor-de-fundo: #EBECEE;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+}
+
+main {
+    background-color: #FFFFFF;
+}
