@@ -1,0 +1,13 @@
+/*estilização do <footer class="rodape">*/
+hr{
+    margin: 0;
+    color: var(--cinza-linha);
+}
+
+.rodape {
+    background-color: var(--branco);
+}
+
+.rodape__texto {
+    padding: 1.5em;
+}

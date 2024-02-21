@@ -13,9 +13,14 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="/style/style.css"/>
     </head>
     <body>
+        <!--Aqui começa o cabeçalho-menu. Esse cabeçalho é a paerte de cima do banner e
+        ela possui um menu hamburguer-->
         <header class="cabecalho">
             <div class="container">
                 <input type="checkbox" id="menu" class="container__botao">
@@ -48,7 +53,8 @@
                 <a class="container__imagem" title="Meu Perfil" href="#"><img src="image/Usuario.svg" alt="Meu Perfil"></a>
             </div>
         </header>
-
+        <!--Essa é a 1ª section. Essa section é a parte do banner com a barra de
+        pesquisa-->
         <section class="banner">
             <h2 class="banner__titulo">Já sabe por onde começar?</h2>
             <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
@@ -58,7 +64,159 @@
                 placeholder="Qual será sua próxima leitura?"/>
         </section>
 
-        <main></main>
-        <footer></footer>
+        <!--Essa é a 2ª section. Essa section -->
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">Últimos Lançamentos</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- livros -->
+                    <div class="swiper-slide"><img src="image/ApacheKafka.svg" alt="Livro sobre apache kafka"></div>
+                    <div class="swiper-slide"><img src="image/Lideranc╠ºa.svg" alt="Liderança em design"></div>
+                    <div class="swiper-slide"><img src="image/Javascript.svg" alt="Livro sobre javaScript assertivo"></div>
+                    <div class="swiper-slide"><img src="image/Guia Front-end.svg" alt="Livro Guia sobre Front-end"></div>
+                    <div class="swiper-slide"><img src="image/Portugol.svg" alt="Livro sobre Portugol"></div>
+                    <div class="swiper-slide"><img src="image/Acessibilidade.svg" alt="Livro sobre Acessibilidade"></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!--1º linha-->
+                <div class="card__descricao">
+                    <!--1º Coluna-->
+                    <div class="descricao">
+                        <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+                        <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                    </div>
+                    <!--2º Coluna-->
+                    <img src="image/Angular.svg" alt="Livro Angular" class="descricao__imagem">
+                </div>
+                <!--2º Linha-->
+                <div class="card__botoes">
+                    <!--1ºcoluna-->
+                    <ul class="botoes">
+                        <li class="botoes__item"><img src="image/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botoes__item"><img src="image/Compras.svg" alt="Adicionar ao carrinho"></li>
+                    </ul>
+                    <!--2º Coluna-->
+                    <a href="#" class="botoes__ancora">Saiba Mais</a>
+                </div>
+            </div>
+        </section>
+
+        <!--Começando a section. Essa section faz a parte dos mais vendidos até o card
+        do autor do mês-->
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">Mais vendidos</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- livros -->
+                    <div class="swiper-slide"><img src="image/ApacheKafka.svg" alt="Livro Apache e Spring boot"></div>
+                    <div class="swiper-slide"><img src="image/Lideranc╠ºa.svg" alt="Livro de liderança em design"></div>
+                    <div class="swiper-slide"><img src="image/Acessibilidade.svg" alt="Livro de acessibilidade"></div>
+                    <div class="swiper-slide"><img src="image/Guia Front-end.svg" alt="Livro de Guia Front-end"></div>
+                    <div class="swiper-slide"><img src="image/Portugol.svg" alt="Livro de lógica de programação em portugol"></div>
+                    <div class="swiper-slide"><img src="image/Javascript.svg" alt="Livro de JavaScript "></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!--1º linha-->
+                <div class="card__descricao">
+                    <!--1º Coluna-->
+                    <div class="descricao">
+                        <p class="estrelinhas"><img src="image/Estrelinhas.svg" alt="Estrelas de classificações"></p>
+                        <h3 class="descricao__titulo">Autor(a) do mês</h3>
+                        <h2 class="descricao__titulo-autor">Juliana Agarikov</h2>
+                        <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.
+                        </p>
+                    </div>
+                    <!--2º Coluna-->
+                    <img src="image/Escritora.svg" alt="Foto Autora do mês">
+                </div>
+                <div class="card__botoes">
+                    <ul class="botoes">
+                        <li class="botoes__item"><img src="image/Favoritos.svg" alt="Adicionar aos Favoritos"></li>
+                        <li class="botoes__item"><img src="image/Compras.svg" alt="Adicionar ao carrinho"></li>
+                    </ul>
+                    <a href="#" class="botoes__ancora">Saiba Mais</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="topicos">
+            <h2 class="topicos__titulo">Tópicos visitados recentemente</h2>
+            <ul class="topicos__lista">
+                <li class="topicos__lista__item">
+                    <a href="#" class="topicos__lista__item-links">Android</a>
+                </li>
+                <li class="topicos__lista__item">
+                    <a href="#" class="topicos__lista__item-links">Marketing Digital</a>
+                </li>
+                <li class="topicos__lista__item">
+                    <a href="#" class="topicos__lista__item-links">
+                        Agile</a>
+                </li>
+                <li class="topicos__lista__item">
+                    <a href="#" class="topicos__lista__item-links">Startups</a>
+                </li>
+                <li class="topicos__lista__item">
+                    <a href="#" class="topicos__lista__item-links">HTML & CSS</a>
+                </li>
+                <li class="topicos__lista__item">
+                    <a href="#" class="topicos__lista__item-links">Python</a>
+                </li>
+                <li class="topicos__lista__item">
+                    <a href="#" class="topicos__lista__item-links">OO</a>
+                </li>
+                <li class="topicos__lista__item">
+                    <a href="#" class="topicos__lista__item-links">Java</a>
+                </li>
+            </ul>
+        </section>
+        <!--Essa é a section. Essa section é um banner no final da página para ficar por
+        dentro das novidades e cadastrar o e-mail para contato-->
+        <section class="contato">
+            <h2 class="contato__titulo">Fique por dentro das contato!</h2>
+            <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros</p>
+            <input
+                class="contato__cademail"
+                type="email"
+                placeholder="Cadastre seu e-mail"/>
+        </section>
+
+        <hr/>
+
+        <footer class="rodape">
+            <p class="rodape__texto">&copy; 2024 Grupo Alura e Alisson Gois.</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                spaceBetween: 10,
+                slidesPerView: 3,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets'
+                }
+            });
+        </script>
     </body>
 </html>
