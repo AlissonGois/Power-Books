@@ -56,3 +56,46 @@
     background-clip: text;
     text-transform: uppercase;
 }
+
+.container__titulo {
+    display: none;
+}
+
+.opcoes {
+    display: none;
+}
+
+
+/*Aplicando o layout de responsividade da mídia 1024 pra cima*/
+@media screen and (min-width: 1024px) {
+    .container__titulo, .container__titulo--negrito {
+        display: block;
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+        font-weight: 300;
+        color: var(--preto);
+        display: inline;
+    }
+
+    .container__titulo--negrito {
+        font-weight: 700;
+    }
+
+    .opcoes {
+        display: flex;
+    }
+
+    .opcoes__item {
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+
+    .opcoes__item--link {
+        color: var(--preto);
+        text-decoration: none;
+    }
+
+    .container__imagem-transparent {
+        display: none;
+    }
+} 
