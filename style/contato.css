@@ -33,3 +33,24 @@
     background-position: initial;
     padding-left: 2em;
 }
+
+@media  screen and (min-width: 830px) {
+    .contato {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contato__titulo {
+        font-size: 24px;
+    }
+
+    .contato__area-texto {
+       margin-right: 1em;
+       width: 35%;
+    }
+
+    .contato__cademail {
+        width: 40%;
+    }
+}
