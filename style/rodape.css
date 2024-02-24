@@ -12,6 +12,10 @@ hr{
     padding: 1.5em 0;
 }
 
+.rodape__lista {
+  display: none;
+}
+
 @media screen and (min-width: 830px) {
   .rodape {
     display: flex;
@@ -25,7 +29,7 @@ hr{
 
    .rodape__lista {
     align-items: center;
-    display: inline;
+    display: block;
     padding: 2.3em 0;
   }
 

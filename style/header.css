@@ -65,6 +65,10 @@
     display: none;
 }
 
+.container__imagem-texto{
+    display: none;
+}
+
 
 /*Aplicando o layout de responsividade da mídia 1024 pra cima*/
 @media screen and (min-width: 830px) {
@@ -111,5 +115,30 @@
 
     .opcao-botao {
         display: none;
+    }
+
+    .container__imagem-texto{
+        display: none;
+    }
+} 
+
+@media screen and (min-width:1280px) {
+    .cabecalho {
+        padding: 0 2em;
+    }
+
+    .opcoes {
+        margin-right: auto;
+    }
+
+    .container__imagem {
+        align-items: center;
+    }
+
+    .container__imagem-texto {
+        display: inline-block;
+        text-decoration: none;
+        color: var(--preto);
+        margin-left: 0.5em;
     }
 } 
