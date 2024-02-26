@@ -54,3 +54,23 @@
         width: 40%;
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .contato {
+        padding: 3em 15vw 3em 15vw;
+    }
+
+    .contato__titulo {
+        padding: 0.5em 0;
+    }
+
+    .contato__texto {
+        margin-right: 3em;
+    }
+
+    .contato__cademail {
+        width: 25%;
+        margin-left: 2.5em;
+    }
+
+}
